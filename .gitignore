@@ -1,0 +1,12 @@
+.DS_Store
+.localized
+._*
+.TemporaryItems
+.htaccess
+.esm-cache
+.sublime-*
+*~
+*.log*
+*.save
+package-lock.json
+node_modules/
