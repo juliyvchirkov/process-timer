@@ -1,0 +1,69 @@
+{
+  "name": "process-timer",
+  "version": "1.0.2",
+  "description": "High-resolution timer class for NodeJs & browsers",
+  "main": "process-timer.js",
+  "homepage": "https://github.com/juliyvchirkov/process-timer",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juliyvchirkov/process-timer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/juliyvchirkov/process-timer/issues"
+  },
+  "author": {
+    "name": "Juliy V. Chirkov",
+    "url": "https://juliyvchirkov.github.io"
+  },
+  "license": "MIT",
+  "keywords": [
+    "browser",
+    "class",
+    "debug",
+    "dev",
+    "development",
+    "epoch",
+    "es5",
+    "hi-res",
+    "high-resolution",
+    "hrtime",
+    "javascript",
+    "js",
+    "legacy",
+    "log",
+    "microseconds",
+    "milliseconds",
+    "modern",
+    "nanoseconds",
+    "node",
+    "nodejs",
+    "performance",
+    "process",
+    "profiling",
+    "seconds",
+    "time",
+    "timer",
+    "timestamp",
+    "tool",
+    "utility"
+  ],
+  "scripts": {
+    "l": "node dev/js-lint-n-tune.js -l",
+    "t": "node dev/js-lint-n-tune.js -t",
+    "lt": "node dev/js-lint-n-tune.js",
+    "lint": "node dev/js-lint-n-tune.js --lint",
+    "tune": "node dev/js-lint-n-tune.js --tune",
+    "linttune": "npm run lt",
+    "prepublish": "npm run lt"
+  },
+  "devDependencies": {
+    "eslint": "^5.3.0",
+    "eslint-config-standard": "^12.0.0-alpha.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-no-use-extend-native": "^0.3.12",
+    "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-promise": "^3.8.0",
+    "eslint-plugin-standard": "^3.1.0",
+    "prettier": "^1.14.2"
+  }
+}
