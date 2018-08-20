@@ -78,16 +78,8 @@ let code = fs.readFileSync(source, {
 const mode = (() => {
     const n = 2
     const noArgs = process.argv.length === n
-    const lint = noArgs
-        ? true
-        : ['-l', '--lint'].includes(process.argv[n])
-            ? true
-            : false
-    const tune = noArgs
-        ? true
-        : ['-t', '--tune'].includes(process.argv[n])
-            ? true
-            : false
+    const lint = noArgs ? true : ['-l', '--lint'].includes(process.argv[n])
+    const tune = noArgs ? true : ['-t', '--tune'].includes(process.argv[n])
 
     return { lint, tune }
 })()
