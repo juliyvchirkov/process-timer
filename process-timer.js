@@ -177,14 +177,12 @@
         var itemTypeof = null
 
         try {
-            itemTypeof = item.constructor.name
+            itemTypeof = item.constructor.name.toLowerCase()
         } catch (error) {
         } finally {
-            return (
-                itemTypeof ||
-                Object.prototype.toString.call(item).slice(8, -1) ||
-                typeof item
-            ).toLowerCase()
+            return itemTypeof && itemTypeof !== typeof item
+                ? itemTypeof
+                : Object.prototype.toString.call(item).slice(8, -1).toLowerCase()
         }
     }
 
